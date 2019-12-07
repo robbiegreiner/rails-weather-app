@@ -1,0 +1,5 @@
+<p id="notice"><%= notice %></p>
+<%= react_component('FirstComponent', {current_weather: @current_weather, location: @location}, {prerender: true}) %>
+<%= link_to 'Edit', edit_location_path(@location) %> |
+<%= link_to 'Back', locations_path %>
+
